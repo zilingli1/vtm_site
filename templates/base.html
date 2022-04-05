@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} {% endblock%}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+    <title>{% block title %}Vertical Tank Maintenance{% endblock %}</title>
 </head>
+
 <body>
-    <div>
-        <h1>Welcome to Software Design</h1>
-        <hr>
-        <br>
-        
-        {% block body %}
-
-        {% endblock %}
-
+    <h1>Vertical Tank Maintenance</h1>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="estimate.html">Estimate</a>
     </div>
+
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    
 </body>
+
 </html>
