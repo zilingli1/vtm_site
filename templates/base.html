@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
-    <title>{% block title %}Vertical Tank Maintenance{% endblock %}</title>
+    <title>{{ pageTitle }}</title>
+       
 </head>
 
 <body>
@@ -16,9 +17,9 @@
         <a href="estimate.html">Estimate</a>
     </div>
 
-    <main>
-        {% block main %}{% endblock %}
-    </main>
+    <content>
+        {% block content %}{% endblock %}
+    </content>
     
 </body>
 
