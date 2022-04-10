@@ -1,9 +1,8 @@
 body{
-    background-color: azure;
+    background-color: white;
 }
 
-h1{color: azure}
-
+h1{font-size: 16pt;}
 h2{font-size: 18pt; font-weight: lighter;}
 
-img {width: 400px;}
+img {width: 500px;}
