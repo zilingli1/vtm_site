@@ -1,4 +1,4 @@
-name: test-package-deploy
+name: test-package-deploy #MMM
 on:
   push:
     branches: [main]
